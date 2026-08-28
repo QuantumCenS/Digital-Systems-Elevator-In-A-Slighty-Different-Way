@@ -1,0 +1,458 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x8C199B06B6F2435C",
+      "device": "xc7vx485tffg1157-1",
+      "gen_directory": "../../../../project_10_sd_2.gen/sources_1/bd/ValidadorCodigo",
+      "name": "ValidadorCodigo",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2025.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "MEU_FF_D_0": "",
+      "MEU_FF_D_1": "",
+      "not_gate_0": "",
+      "not_gate_1": "",
+      "and4_gate_B": "",
+      "and4_gate_C": "",
+      "and4_gate_A": "",
+      "and2_gate_D": "",
+      "or3_gate_0": "",
+      "or3_gate_1": ""
+    },
+    "ports": {
+      "clk": {
+        "direction": "I"
+      },
+      "reset": {
+        "direction": "I"
+      },
+      "btn_confirmar": {
+        "direction": "I"
+      },
+      "sw_1": {
+        "direction": "I"
+      },
+      "sw_0": {
+        "direction": "I"
+      },
+      "codigo_ok": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "MEU_FF_D_0": {
+        "vlnv": "xilinx.com:module_ref:MEU_FF_D:1.0",
+        "ip_revision": "1",
+        "xci_name": "ValidadorCodigo_MEU_FF_D_0_0",
+        "xci_path": "ip\\ValidadorCodigo_MEU_FF_D_0_0\\ValidadorCodigo_MEU_FF_D_0_0.xci",
+        "inst_hier_path": "MEU_FF_D_0",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "MEU_FF_D",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "en": {
+            "direction": "I"
+          },
+          "D": {
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O"
+          },
+          "nQ": {
+            "direction": "O"
+          }
+        }
+      },
+      "MEU_FF_D_1": {
+        "vlnv": "xilinx.com:module_ref:MEU_FF_D:1.0",
+        "ip_revision": "1",
+        "xci_name": "ValidadorCodigo_MEU_FF_D_1_0",
+        "xci_path": "ip\\ValidadorCodigo_MEU_FF_D_1_0\\ValidadorCodigo_MEU_FF_D_1_0.xci",
+        "inst_hier_path": "MEU_FF_D_1",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "MEU_FF_D",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "en": {
+            "direction": "I"
+          },
+          "D": {
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O"
+          },
+          "nQ": {
+            "direction": "O"
+          }
+        }
+      },
+      "not_gate_0": {
+        "vlnv": "xilinx.com:module_ref:not_gate:1.0",
+        "ip_revision": "1",
+        "xci_name": "ValidadorCodigo_not_gate_0_0",
+        "xci_path": "ip\\ValidadorCodigo_not_gate_0_0\\ValidadorCodigo_not_gate_0_0.xci",
+        "inst_hier_path": "not_gate_0",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "not_gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "Y": {
+            "direction": "O"
+          }
+        }
+      },
+      "not_gate_1": {
+        "vlnv": "xilinx.com:module_ref:not_gate:1.0",
+        "ip_revision": "1",
+        "xci_name": "ValidadorCodigo_not_gate_1_0",
+        "xci_path": "ip\\ValidadorCodigo_not_gate_1_0\\ValidadorCodigo_not_gate_1_0.xci",
+        "inst_hier_path": "not_gate_1",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "not_gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "Y": {
+            "direction": "O"
+          }
+        }
+      },
+      "and4_gate_B": {
+        "vlnv": "xilinx.com:module_ref:and4_gate:1.0",
+        "ip_revision": "1",
+        "xci_name": "ValidadorCodigo_and4_gate_0_1",
+        "xci_path": "ip\\ValidadorCodigo_and4_gate_0_1\\ValidadorCodigo_and4_gate_0_1.xci",
+        "inst_hier_path": "and4_gate_B",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "and4_gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "C": {
+            "direction": "I"
+          },
+          "D": {
+            "direction": "I"
+          },
+          "Y": {
+            "direction": "O"
+          }
+        }
+      },
+      "and4_gate_C": {
+        "vlnv": "xilinx.com:module_ref:and4_gate:1.0",
+        "ip_revision": "1",
+        "xci_name": "ValidadorCodigo_and4_gate_1_0",
+        "xci_path": "ip\\ValidadorCodigo_and4_gate_1_0\\ValidadorCodigo_and4_gate_1_0.xci",
+        "inst_hier_path": "and4_gate_C",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "and4_gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "C": {
+            "direction": "I"
+          },
+          "D": {
+            "direction": "I"
+          },
+          "Y": {
+            "direction": "O"
+          }
+        }
+      },
+      "and4_gate_A": {
+        "vlnv": "xilinx.com:module_ref:and4_gate:1.0",
+        "ip_revision": "1",
+        "xci_name": "ValidadorCodigo_and4_gate_2_0",
+        "xci_path": "ip\\ValidadorCodigo_and4_gate_2_0\\ValidadorCodigo_and4_gate_2_0.xci",
+        "inst_hier_path": "and4_gate_A",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "and4_gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "C": {
+            "direction": "I"
+          },
+          "D": {
+            "direction": "I"
+          },
+          "Y": {
+            "direction": "O"
+          }
+        }
+      },
+      "and2_gate_D": {
+        "vlnv": "xilinx.com:module_ref:and2_gate:1.0",
+        "ip_revision": "1",
+        "xci_name": "ValidadorCodigo_and2_gate_0_0",
+        "xci_path": "ip\\ValidadorCodigo_and2_gate_0_0\\ValidadorCodigo_and2_gate_0_0.xci",
+        "inst_hier_path": "and2_gate_D",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "and2_gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "Y": {
+            "direction": "O"
+          }
+        }
+      },
+      "or3_gate_0": {
+        "vlnv": "xilinx.com:module_ref:or3_gate:1.0",
+        "ip_revision": "1",
+        "xci_name": "ValidadorCodigo_or3_gate_0_0",
+        "xci_path": "ip\\ValidadorCodigo_or3_gate_0_0\\ValidadorCodigo_or3_gate_0_0.xci",
+        "inst_hier_path": "or3_gate_0",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "or3_gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "C": {
+            "direction": "I"
+          },
+          "Y": {
+            "direction": "O"
+          }
+        }
+      },
+      "or3_gate_1": {
+        "vlnv": "xilinx.com:module_ref:or3_gate:1.0",
+        "ip_revision": "1",
+        "xci_name": "ValidadorCodigo_or3_gate_1_0",
+        "xci_path": "ip\\ValidadorCodigo_or3_gate_1_0\\ValidadorCodigo_or3_gate_1_0.xci",
+        "inst_hier_path": "or3_gate_1",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "or3_gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "C": {
+            "direction": "I"
+          },
+          "Y": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "MEU_FF_D_0_Q": {
+        "ports": [
+          "MEU_FF_D_0/Q",
+          "and4_gate_B/B",
+          "and2_gate_D/B"
+        ]
+      },
+      "MEU_FF_D_0_nQ": {
+        "ports": [
+          "MEU_FF_D_0/nQ",
+          "and4_gate_A/B",
+          "and4_gate_C/B"
+        ]
+      },
+      "MEU_FF_D_1_Q": {
+        "ports": [
+          "MEU_FF_D_1/Q",
+          "and4_gate_C/A",
+          "and2_gate_D/A"
+        ]
+      },
+      "MEU_FF_D_1_nQ": {
+        "ports": [
+          "MEU_FF_D_1/nQ",
+          "and4_gate_A/A",
+          "and4_gate_B/A"
+        ]
+      },
+      "and2_gate_D_Y": {
+        "ports": [
+          "and2_gate_D/Y",
+          "or3_gate_0/C",
+          "or3_gate_1/C",
+          "codigo_ok"
+        ]
+      },
+      "and4_gate_A_Y": {
+        "ports": [
+          "and4_gate_A/Y",
+          "or3_gate_1/A"
+        ]
+      },
+      "and4_gate_B_Y": {
+        "ports": [
+          "and4_gate_B/Y",
+          "or3_gate_0/A"
+        ]
+      },
+      "and4_gate_C_Y": {
+        "ports": [
+          "and4_gate_C/Y",
+          "or3_gate_0/B",
+          "or3_gate_1/B"
+        ]
+      },
+      "btn_confirmar_1": {
+        "ports": [
+          "btn_confirmar",
+          "MEU_FF_D_0/en",
+          "MEU_FF_D_1/en"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "MEU_FF_D_0/clk",
+          "MEU_FF_D_1/clk"
+        ]
+      },
+      "n_sw1": {
+        "ports": [
+          "not_gate_0/Y",
+          "and4_gate_A/C",
+          "and4_gate_B/C"
+        ]
+      },
+      "not_gate_1_Y": {
+        "ports": [
+          "not_gate_1/Y",
+          "and4_gate_C/D"
+        ]
+      },
+      "or3_gate_0_Y": {
+        "ports": [
+          "or3_gate_0/Y",
+          "MEU_FF_D_1/D"
+        ]
+      },
+      "or3_gate_1_Y": {
+        "ports": [
+          "or3_gate_1/Y",
+          "MEU_FF_D_0/D"
+        ]
+      },
+      "reset_1": {
+        "ports": [
+          "reset",
+          "MEU_FF_D_0/reset",
+          "MEU_FF_D_1/reset"
+        ]
+      },
+      "sw_0_1": {
+        "ports": [
+          "sw_0",
+          "not_gate_1/A",
+          "and4_gate_A/D",
+          "and4_gate_B/D"
+        ]
+      },
+      "sw_1_1": {
+        "ports": [
+          "sw_1",
+          "not_gate_0/A",
+          "and4_gate_C/C"
+        ]
+      }
+    }
+  }
+}
